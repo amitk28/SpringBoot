@@ -13,11 +13,14 @@ public class LangConstant {
 	@Autowired
 	private LanguageRegexProperties prop;
 
-	public static List<String> langList;
+	public static List<String> name;
+	public static String description;
+	
 	
 	@PostConstruct
 	private void setValues() {
-		langList = prop.getList();
+		name = prop.getGetName();
+		description = prop.getGetDescription();
 	}
 
 }

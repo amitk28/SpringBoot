@@ -14,13 +14,20 @@ import org.springframework.stereotype.Component;
 public class LanguageRegexProperties {
 	
 	
-	private List<String> list;
+	private List<String> getName;
+	private String getDescription;
+	public List<String> getGetName() {
+		return getName;
+	}
+	public void setGetName(List<String> getName) {
+		this.getName = getName;
+	}
+	public String getGetDescription() {
+		return getDescription;
+	}
+	public void setGetDescription(String getDescription) {
+		this.getDescription = getDescription;
+	}
 	
-	public List<String> getList() {
-		return list;
-	}
-	public void setList(List<String> list) {
-		this.list = list;
-	}
 	
 }
